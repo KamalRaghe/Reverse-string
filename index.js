@@ -18,14 +18,27 @@ function reverse(){
     re.innerHTML = 'Reverse: ' + reverse
 }
 
+// function reverse2(){
+//     const str = input.value
+//     const arr = str.split('')
+//     const reverse = arr.reverse().join('')
+//     string.innerHTML = 'String: ' + str
+//     re.innerHTML = 'Reverse: ' + reverse
+// }
+
 function reverse2(){
     const str = input.value
-    const arr = str.split('')
-    const reverse = arr.reverse().join('')
-
-
+    const arr = str.split('').reverse().join('')
     string.innerHTML = 'String: ' + str
     re.innerHTML = 'Reverse: ' + reverse
 }
 
 btn.addEventListener('click', reverse2)
+
+const arr =[1,-1,2,3]
+
+const sum = arr.reduce((accumulator, currentValue)=>{
+    return accumulator + currentValue
+})
+
+console.log(sum)
