@@ -18,4 +18,14 @@ function reverse(){
     re.innerHTML = 'Reverse: ' + reverse
 }
 
-btn.addEventListener('click', reverse)
+function reverse2(){
+    const str = input.value
+    const arr = str.split('')
+    const reverse = arr.reverse().join('')
+
+
+    string.innerHTML = 'String: ' + str
+    re.innerHTML = 'Reverse: ' + reverse
+}
+
+btn.addEventListener('click', reverse2)
