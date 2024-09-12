@@ -8,8 +8,11 @@ const btn = document.getElementById('btn')
 function reverse(){
     let str = input.value
     let reverse = ''
-    for (i=0;i < str.length; i++){
-        reverse = str[i] + reverse 
+    // for (i=0;i < str.length; i++){
+    //     reverse = str[i] + reverse 
+    // }
+    for (let i of str){
+        reverse = i + reverse 
     }
     string.innerHTML = 'String: ' + str
     re.innerHTML = 'Reverse: ' + reverse
